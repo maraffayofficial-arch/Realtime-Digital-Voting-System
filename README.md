@@ -33,6 +33,3 @@ MongoDB
 frontend port:  http://localhost:3000/
 backend port:  http://localhost:9000/
 
-npm or yarn
-
-⚙️ Installation
