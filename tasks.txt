@@ -1,0 +1,37 @@
+tasks
+
+1-user signin/signup                                 //done
+2-see the list of the voting candidates             //done
+3-vote only one time, after voting, the same user cant vote again  //done
+4-A route showing the candidates list and live votes gained by each candidate sorted by their voted count  //done
+6-There should be one candidate who can handle the table of the candidates and admin cannot vote  //done
+5-user data should contain the CNIC number as a unique government ID proof         //done
+7-user should be able to change their account password           //done
+8-user can only login using the CNIC number and password          //done
+
+
+routes
+
+user Authentication
+
+/user/sign-up:                            POST -create a new user account
+/user/sign-in:                            POST -login to the existing acount  using (cnic and password)
+
+voting
+/candidate/list:                          GET- Get the list of all the voting candidates
+/candidate/vote/:candidateId:             POST-Vote for the specific candidate
+
+vote counts:
+/candidate/vote-counts:                   GET-get the list of candidates sorted by their vote counts 
+
+User profiles:
+/user/myprofile:                          GET-get the user profile info
+/user/update-password:                    PUT- let the user to change their password
+
+
+admin candidate management:
+/candidate/createCandidate:               POST-create a new candidate
+/candidate/updateCandidate/:candidateId:  PUT-Update an existing candidate
+/candidate/deleteCandidate/:candidateId:  DELETE-DELETE A CANDIDATE FROM THE LIST
+
+
